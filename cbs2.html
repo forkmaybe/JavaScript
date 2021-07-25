@@ -19,6 +19,18 @@ function myCalculator(num1, num2, myCallback) {
 }
 
 myCalculator(5, 5, myDisplayer);
+  
+setTimeout(myFunction, 3000);//text appears after 3 secs
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I love You !!";
+}
+  
+setTimeout(function() { myFunction("I love You !!!"); }, 3000);
+
+function myFunction(value) {
+  document.getElementById("demo").innerHTML = value;
+}
 </script>
 
 </body>
