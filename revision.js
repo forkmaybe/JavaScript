@@ -1,4 +1,4 @@
-//Pluralsight
+//Pluralsight REVISION OF JavaScript
 //Strings
 'This is a string.';
 "This is the 2nd string.";
@@ -114,4 +114,77 @@ outcome;
 
 //Arrays
 var breakfast = ["coffee", "croissant"];
-breakfast;
+var hodgepodge = [100, "paint", [200, "brush"], false];
+hodgepodge;//output is array and includes another array inside
+breakfast;//output is array
+
+var sisters = ["Tia", "Tamera"];
+sisters[0];
+//prints the first element
+
+var actors = ["Felicia", "Nathan", "Neil"];
+actors[actors.length - 1];
+//Last element
+
+var colors = ["red", "yelo", "blue"];
+colors[1] = "yellow";//setter
+colors;
+
+["a", "b", "c", 1, 2, 3].length;
+//length is outputted as 6
+["tortilla chips"].concat(["salsa", "queso", "guacamole"]);
+//combined 2 arrays into one
+["Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"].pop();//returns last
+["John", "Kate"].push(8);//added 8 to array and returns length of 3
+["a", "b", "c"].reverse();//reverses the order in the array
+
+var course = {
+       name: "GRA 2032",
+       start: 8,
+       end: 10
+};
+course.name;
+course["name"];//both access for the value the same result
+
+var character = {
+       name: "Donna",
+       hair: "red"
+};
+
+character.hair = "blonde";//setter
+character;//object 
+var character = {
+       name: "Donna",
+       hair: "red"
+};
+character["hair"] = "blonde";//same setter
+character;
+
+var person= {
+       firstName: "Jack",
+       lastName: "Smith",
+       fullName: function () {
+          return this.firstName + "   " + this.lastName;        
+       }
+ };
+
+person.fullName();//runs function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
